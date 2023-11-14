@@ -4,7 +4,9 @@
  + Features:
   - 3 types of enemies
   - 1 final boss
-  - 1 consumable
+  - 2 types of items:
+     = Key Items
+     = Consumable Items
   - 10 rooms to explore
   - Different options
   - Thrilling sotry
