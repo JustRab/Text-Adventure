@@ -57,7 +57,7 @@ int main()
 
 void FirstRoom(Player* player) 
 {
-  //Create a room object
+  //Create a level object
   Level room1("Lonely Cell", "It seems like a prision cell. There doesn't seem to be anyone in this room except for me. The front door is open, is my only way out right now.");
   cout << "------------------------------------------" << endl;
   cout << "Room 1: " << room1.getName() << endl;
