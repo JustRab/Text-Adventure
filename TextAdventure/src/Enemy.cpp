@@ -1,7 +1,7 @@
-#include "Enemy.h"
+#include "Foe.h"
 #include "Player.h"
 
-void Enemy::attack(Player* _p)  
+void Foe::attack(Player* _p)  
 {
   if (_p != nullptr) //If the player isnt null
   {

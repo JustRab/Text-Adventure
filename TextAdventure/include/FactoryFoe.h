@@ -1,15 +1,15 @@
 #pragma once
 #include "Commons.h"
-class Enemy;
+class Foe;
 
 
-class FactoryEnemy  
+class FactoryFoe  
 {
     public:
-      virtual Enemy* createEnemy(const string& name, const int& health, const int& damage) = 0; //Virtual function for the creation of the enemy
+      virtual Foe* createEnemy(const string& name, const int& health, const int& damage) = 0; //Virtual function for the creation of the enemy
 };
 
-class ConcreteEnemy : public Enemy 
+class LogicFoe : public Foe 
 {
     private:
       int m_health; 
@@ -18,7 +18,7 @@ class ConcreteEnemy : public Enemy
 
       
     public:
-      ConcreteEnemy(const string& name, int health, int damage) : 
+      LogicFoe(const string& name, int health, int damage) : 
         m_name(name), m_health(health), m_damage(damage) {} //Constructor with parameters
 
       void attack(Player* _p) override 
@@ -34,29 +34,28 @@ class ConcreteEnemy : public Enemy
       {
         return m_health;
       }
+      void setHealth(int _h) override
+      {
+          m_health += _h;
+      }
+
+      int getDamage() override
+      {
+          return m_damage;
+      }
 
       string getName() override 
       {
         return m_name;
       }
-
-      int getDamage() override 
-      {
-        return m_damage;
-      }
-
-      void setHealth(int _h) override 
-      {
-        m_health += _h;
-      }
 };
 
 
-class ConcreteEnemyFactory : public FactoryEnemy  
+class LogicFoeFactory : public FactoryFoe 
 {
     public:
-      Enemy* createEnemy(const string& name, const int& health, const int& damage) override  
+      Foe* createEnemy(const string& name, const int& health, const int& damage) override  
       {
-        return new ConcreteEnemy(name, health, damage); //Returns a new enemy
+        return new LogicFoe(name, health, damage); //Returns a new enemy
       }
 };

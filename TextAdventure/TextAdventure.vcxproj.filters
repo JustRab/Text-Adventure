@@ -27,15 +27,15 @@
     <ClCompile Include="src\Rooms.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Movement.cpp">
+    <ClCompile Include="src\Items.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="src\Items.cpp">
+    <ClCompile Include="src\Movement.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\Enemy.h">
+    <ClInclude Include="include\Foe.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="include\Commons.h">
@@ -44,10 +44,10 @@
     <ClInclude Include="include\Player.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="include\FactoryEnemy.h">
+    <ClInclude Include="include\FactoryFoe.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="include\Rooms.h">
+    <ClInclude Include="include\Level.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="include\Movement.h">

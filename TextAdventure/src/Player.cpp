@@ -1,7 +1,7 @@
 #include "Player.h"
-#include "Enemy.h"
+#include "Foe.h"
 
-void Player::attack(Enemy*& _e) 
+void Player::attack(Foe*& _e) 
 {
     if (_e != nullptr) //If the enemy isnt null
     {
@@ -16,7 +16,7 @@ void Player::attack(Enemy*& _e)
     }
 }
 
-void Player::combat(Enemy* e_foe) {
+void Player::combat(Foe* e_foe) {
     cout << "There is a " << e_foe->getName() << " in front of me!" << endl; //Prints the enemy name
 
     while (m_health > 0 && e_foe->getHealth() > 0) //While the player and the enemy still have health the loop will repeat 

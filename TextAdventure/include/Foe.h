@@ -2,12 +2,12 @@
 #include "Commons.h"
 class Player;
 
-class Enemy
+class Foe
 {
 	public:
-		Enemy() = default; //Default constructor
-		Enemy(string _name, int _health) : m_name(_name), m_health(_health) {}; //Constructor with parameters
-		~Enemy() = default; //Default destructor
+		Foe() = default; //Default constructor
+		Foe(string _name, int _health) : m_name(_name), m_health(_health) {}; //Constructor with parameters
+		~Foe() = default; //Default destructor
 
 		virtual void 
 			attack(Player* _p) = 0; //Virtual function for the attack of the enemy

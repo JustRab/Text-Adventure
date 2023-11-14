@@ -1,7 +1,7 @@
 #pragma once
 #include "Commons.h"
 #include "Items.h"
-class Enemy;
+class Foe;
 
 class Player
 {
@@ -10,7 +10,7 @@ class Player
 		Player(string _name, int _health) : m_name(_name), m_health(_health) {}; //Constructor with parameters
 		~Player() = default; //Default destructor
 
-		void attack(Enemy*& _e); //Function for the attack of the player
+		void attack(Foe*& _e); //Function for the attack of the player
 
 		void setHealth(int _h) //Function for the attack of the player  
 		{
@@ -26,7 +26,7 @@ class Player
 
 		void setName(string name); //Sets the name of the player
 
-		void  combat(Enemy* e_foe); //Function for the combat of the player
+		void  combat(Foe* e_foe); //Function for the combat of the player
 
 		void pickUpItem(const Items& obj); //Function for the player to pick up an item
 

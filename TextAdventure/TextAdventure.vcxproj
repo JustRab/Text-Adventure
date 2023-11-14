@@ -128,21 +128,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Movement.cpp" />
     <ClCompile Include="src\Enemy.cpp" />
     <ClCompile Include="src\Items.cpp" />
     <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Movement.cpp" />
     <ClCompile Include="src\Player.cpp" />
     <ClCompile Include="src\Rooms.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Commons.h" />
-    <ClInclude Include="include\Enemy.h" />
-    <ClInclude Include="include\FactoryEnemy.h" />
+    <ClInclude Include="include\Foe.h" />
+    <ClInclude Include="include\FactoryFoe.h" />
     <ClInclude Include="include\Items.h" />
     <ClInclude Include="include\Movement.h" />
     <ClInclude Include="include\Player.h" />
-    <ClInclude Include="include\Rooms.h" />
+    <ClInclude Include="include\Level.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
