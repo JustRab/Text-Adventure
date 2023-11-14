@@ -48,7 +48,7 @@ void Player::combat(Foe* e_foe) {
   }
   else //If the player wins the battle
   {
-    m_health += 30; //The player recovers some health
+    m_health += 45; //The player recovers some health
     cout << "\nI won and got some energy from the battle" << endl;
   }
 }
