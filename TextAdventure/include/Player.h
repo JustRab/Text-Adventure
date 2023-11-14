@@ -32,7 +32,7 @@ class Player
 
 		bool hasItem(const string& objName) const; //Function for the player to check if he has an item
 
-		void consumePotion(); //Function for the player to consume a potion
+		void usePotion(); //Function for the player to consume a potion
 
 	private:
 		int m_health = 100; //The health of the player

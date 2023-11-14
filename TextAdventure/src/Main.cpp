@@ -34,9 +34,9 @@ Foe* Guard = enemyGuard.createEnemy("City Guard", 90, 18);
 Foe* Director = enemyDirector.createEnemy("Director", 175, 25);
 
 //Create different objects from the class Items
-Items potion("Potion", 50);
+Items potion("Potion", 75);
 //Mision Item:
-Items guardKey("Guard's Key", 0);
+Items guardKey("Guard's Key", 1);
 
 int main() 
 {
